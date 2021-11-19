@@ -2,6 +2,9 @@
 
 {{cookiecutter.project_name}} is a Dash component library.
 
+## Important
+**Note: This boilerplate is modified from the plotly original. The post_grn_project.py and package.json files have been amended
+
 Get started with:
 1. Install Dash and its dependencies: https://dash.plotly.com/installation
 2. Run `python usage.py`
