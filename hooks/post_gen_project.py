@@ -20,12 +20,12 @@ else:
 
 
 def _execute_command(cmd):
-    line = shlex.split(cmd, posix=not is_windows)
+    # line = shlex.split(cmd, posix=not is_windows)
 
     print('Executing: {}'.format(cmd))
 
     # call instead of Popen to get realtime output
-    status = subprocess.call(line, shell=is_windows)
+    status = subprocess.call(cmd, shell=is_windows)
 
     if status != 0:
         print('post_gen_project command failed: {}'.format(cmd),
